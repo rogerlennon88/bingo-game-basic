@@ -1,0 +1,21 @@
+/* css/layout/_reset.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  ul > li {
+    list-style: none;
+  }
+  

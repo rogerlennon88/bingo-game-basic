@@ -1,0 +1,32 @@
+/* css/components/_last-number-list.css */
+
+#last-number-list{
+  padding-bottom: calc(var(--gap) * 1.5);
+}
+#last-number-list .number-list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--gap);
+  place-content: center;
+}
+
+#last-number-list .number-list .item {
+  display: grid;
+}
+#last-number-list .number-list .item span {
+  background-color: white;
+  color: rgb(25, 25, 112);
+  font-size: 3.2rem;
+  padding: var(--gap);
+  font-weight: var(--fw-bold);
+  border: 3px solid rgba(233, 220, 201, 0.75);
+  border-radius: 50%;
+}
+
+.ball {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 2px 1px rgba(181, 168, 150, 0.6);
+}

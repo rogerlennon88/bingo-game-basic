@@ -1,0 +1,118 @@
+/* css/components/_game-board.css */
+
+#game-board {
+  background-color: rgb(36, 113, 163);
+  border-radius: 4px;
+}
+
+/* Grid Game Board */
+#grid-game-board {
+  display: grid;
+  gap: 2px;
+}
+
+/* Horizontal Grid */
+#grid-game-board.board-x {
+  grid-template-rows: repeat(5, 1fr);
+}
+#grid-game-board.board-x .group {
+  grid-template-columns: repeat(16, 1fr);
+}
+
+/* Vertical Grid */
+#grid-game-board.board-y {
+  grid-template-columns: repeat(5, 1fr);
+}
+#grid-game-board.board-y .group {
+  grid-template-rows: repeat(16, 1fr);
+}
+
+/* Groups and Cells */
+#grid-game-board .group {
+  display: grid;
+  gap: 2px;
+}
+#grid-game-board .cell {
+  display: grid;
+}
+
+/* General Buttons */
+#grid-game-board .btn-ggb {
+  color: white;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* Letter Button */
+#grid-game-board .letter {
+  background-color: rgb(84, 153, 199);
+  font-size: 3.2rem;
+  font-weight: var(--fw-bold);
+  padding: calc(var(--gap) / 2);
+}
+
+/* Number Button */
+#grid-game-board .num {
+  background-color: rgb(251, 252, 252);
+  color: rgb(52, 73, 94);
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+}
+
+/* Letter Button Status */
+#grid-game-board .letter:hover {
+  background-color: rgb(137, 207, 240);
+  color: rgb(0, 71, 171);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.75);
+}
+#grid-game-board .letter:active {
+  background-color: rgb(70, 130, 180);
+  color: rgba(250, 249, 246, 0.32);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 8px 1px rgba(8, 24, 168, 0.5);
+}
+#grid-game-board .letter.marked {
+  background-color: rgb(70, 130, 180);
+  color: rgba(250, 249, 246, 0.32);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  cursor: default;
+  box-shadow: inset 0 0 8px 1px rgba(8, 24, 168, 0.5);
+}
+
+/* Number Button Status */
+#grid-game-board .num:hover {
+  background-color: rgb(255, 170, 51);
+  color: var(--color-white);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+#grid-game-board .num:active {
+  background-color: rgb(193, 154, 107);
+  color: rgba(250, 249, 246, 0.75);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+#grid-game-board .num.marked {
+  background-color: rgb(193, 154, 107);
+  color: rgba(250, 249, 246, 0.75);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  cursor: default;
+  box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Border Radius Grid Buttons */
+#grid-game-board .group:first-child .cell:first-child .btn-ggb {
+  border-top-left-radius: 4px;
+}
+#grid-game-board .group:first-child .cell:last-child .btn-ggb {
+  border-bottom-left-radius: 4px;
+}
+#grid-game-board .group:last-child .cell:first-child .btn-ggb {
+  border-top-right-radius: 4px;
+}
+#grid-game-board .group:last-child .cell:last-child .btn-ggb {
+  border-bottom-right-radius: 4px;
+}

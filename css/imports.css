@@ -1,0 +1,21 @@
+/* css/imports.css */
+
+/* Layout */
+@import "/css/layout/_variables.css";
+@import "/css/layout/_reset.css";
+@import "/css/layout/_blocks.css";
+@import "/css/layout/_modules.css";
+@import "/css/layout/_game.css";
+
+/* Components */
+@import "/css/components/_buttons.css";
+@import "/css/components/_brand.css";
+@import "/css/components/_last-number.css";
+@import "/css/components/_last-number-list.css";
+@import "/css/components/_game-mode.css";
+@import "/css/components/_game-board.css";
+@import "/css/components/_game-controls.css";
+
+
+/* Responsive */
+

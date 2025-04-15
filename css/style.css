@@ -1,0 +1,62 @@
+/* css/style.css */
+
+@import "/css/imports.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--fs-sm);
+  font-family: "Play", serif;
+  font-weight: var(--font-weight-regular);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  background-color: rgb(115, 147, 179);
+  padding: var(--gap) calc(var(--gap) * 2);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: calc(var(--gap) * 2);
+  align-items: center;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: var(--grid-gap);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(15, 82, 186);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+p {
+  color: black;
+  font-size: 1.6rem;
+}
+
+#page-title {
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(var(--gap) * 2);
+}
+
+.container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+}

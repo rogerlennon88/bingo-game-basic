@@ -1,0 +1,22 @@
+/* css/components/_last-number.css */
+
+#last-number {
+  padding-bottom: calc(var(--gap) * 1.5);
+}
+#last-number .num-1 {
+  background-color: white;
+  color: rgb(25, 25, 112);
+  font-size: 6.4rem;
+  font-weight: var(--fw-bold);
+  padding: calc(var(--gap) * 2);
+  border: 6px solid rgba(233, 220, 201, 0.75);
+  border-radius: 50%;
+}
+
+.ball {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 2px 1px rgba(216, 216, 216, 0.6), 0px 4px 2px 1px rgba(181, 168, 150, 0.6);
+}
