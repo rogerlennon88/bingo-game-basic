@@ -83,14 +83,14 @@
 
 /* Number Button Status */
 #grid-game-mode .num:hover {
-  background-color: rgb(64, 181, 173);
-  color: rgba(112, 128, 144, 0.95);
+  background-color: rgb(227, 115, 94);
+  color: rgba(255, 229, 180, 0.95);
 }
 #grid-game-mode .num:active {
-  background-color: rgb(95, 158, 160);
+  background-color: rgb(233, 116, 81);
   color: rgba(250, 249, 246, 0.75);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
-  box-shadow: inset 0 0 8px 1px rgba(64, 130, 109, 0.5);
+  text-shadow: 2px 2px 2px rgba(139, 64, 0, 0.75);
+  box-shadow: inset 0 0 8px 1px rgba(139, 64, 0, 0.64);
 }
 #grid-game-mode .num.marked {
   background-color: rgb(95, 158, 160);
