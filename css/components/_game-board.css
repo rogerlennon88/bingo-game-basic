@@ -45,6 +45,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
+  user-select: none;
 }
 
 /* Letter Button */
