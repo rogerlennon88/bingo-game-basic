@@ -27,7 +27,7 @@
           <game-mode :patron-marcado="patronMarcado" @marcar-patron="marcarPatron"></game-mode>
           <last-number :ultima-balota="ultimaBalota" ref="lastNumber"></last-number>
           <last-number-list ref="lastNumberList"></last-number-list>
-          <game-controls></game-controls>
+          <game-controls @reiniciar-juego="reiniciarJuego"></game-controls>
         </section>
       </main>
     </div>

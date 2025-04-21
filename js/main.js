@@ -31,8 +31,10 @@ const app = Vue.createApp({
       }
     },
     reiniciarJuego() {
+      console.log("Método 'reiniciarJuego' ejecutado en main.js") // Agrega esta línea
       this.balotasMarcadas = []
       this.patronMarcado = []
+      // Aquí podrías añadir lógica para resetear la interfaz visual si es necesario
     },
     actualizarUltimas4Balotas() {
       if (this.componentesMontados && this.$refs.lastNumberList) {
