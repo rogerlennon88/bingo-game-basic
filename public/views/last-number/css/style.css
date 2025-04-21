@@ -1,0 +1,35 @@
+/* views/last-number.css */
+
+#view-last-number header {
+    background-color: #2471A3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#view-last-number header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.last-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #5499C7;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

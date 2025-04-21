@@ -20,6 +20,8 @@ const app = Vue.createApp({
       this.balotasMarcadas.unshift(numero)
       this.ultimaBalota = numero
       console.log("Histórico de balotas marcadas:", this.balotasMarcadas)
+      // Emitir un evento para notificar a las vistas
+      window.dispatchEvent(new CustomEvent("lastNumberUpdated", { detail: { number: this.ultimaBalota } }))
     },
     marcarPatron(idBoton) {
       const index = this.patronMarcado.indexOf(idBoton)
