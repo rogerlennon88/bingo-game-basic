@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
@@ -26,13 +25,14 @@
         </section>
         <section class="block">
           <game-mode :patron-marcado="patronMarcado" @marcar-patron="marcarPatron"></game-mode>
-          <last-number ref="lastNumber"></last-number>
+          <last-number :ultima-balota="ultimaBalota" ref="lastNumber"></last-number>
           <last-number-list ref="lastNumberList"></last-number-list>
           <game-controls></game-controls>
         </section>
       </main>
     </div>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

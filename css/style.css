@@ -10,10 +10,6 @@ body {
   font-size: var(--fs-sm);
   font-family: "Play", serif;
   font-weight: var(--font-weight-regular);
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr;
 }
 
 header {
@@ -52,6 +48,13 @@ p {
   display: flex;
   justify-content: flex-end;
   gap: calc(var(--gap) * 2);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .container {
